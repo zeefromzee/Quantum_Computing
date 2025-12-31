@@ -1,104 +1,60 @@
-# Quantum Computing
+# Quantum Computing 
 
-Welcome, brave quantum explorer. This repository is a tidy, friendly space for learning, experimenting, and building small quantum projects. It is written to be approachable for newcomers while staying useful for more experienced users. Think of it as a gentle lab bench for qubits, circuits, and neat little experiments.
+> Random quantum circuits and projects I made while exploring the wonderful world of quantum computation
 
-## What this is
+## What's Inside? 
 
-- A collection of notebooks and scripts that demonstrate key concepts in quantum computing.
-- Example circuits, simulation utilities, and clear notes that explain what is happening under the hood.
-- A place to try out ideas, reproduce examples, and iterate quickly.
+This repository contains a collection of quantum computing implementations and experiments, built with curiosity and a love for quantum mechanics. Each project explores different aspects of quantum algorithms and circuit design.
 
-Everything here is meant to be educational, reproducible, and easy to follow.
+### Current Projects
 
-## Key features
+**Deutsch-Jozsa Algorithm** (`Deutsch-Jozsa_algo.py`)  
+An implementation of the Deutsch-Jozsa algorithm, one of the earliest examples of quantum advantage. This algorithm determines whether a function is constant or balanced, requiring only a single query compared to classical approaches.
 
-- Clean example notebooks that walk through basic to intermediate quantum concepts
-- Utility scripts for common tasks like circuit visualization and state inspection
-- Guidelines and templates to help you add your own experiments
-- Tests and linting where applicable to keep things stable and easy to run
+**Quantum Coin Simulation** (`quantum_coin.py`)  
+A quantum take on the classic coin flip, exploring superposition and measurement in quantum systems. Watch as quantum coins exist in multiple states simultaneously before collapsing to a definite outcome.
 
-## Who this is for
+**Random Circuits** (`random_circuits.py`)  
+Generating and analyzing random quantum circuits to explore circuit behavior, gate combinations, and quantum state evolution. Perfect for understanding how different quantum operations interact.
 
-- Curious learners who want to try quantum programming for the first time
-- Students working on small projects or homework exercises
-- Developers who want a lightweight reference for common quantum patterns
+## Getting Started (づ｡◕‿‿◕｡)づ
 
-## Quick start
+### Prerequisites
 
-1. Clone the repository
-   - git clone https://github.com/zeefromzee/Quantum_Computing.git
-2. Create a Python virtual environment
-   - python -m venv venv
-   - source venv/bin/activate   # on macOS or Linux
-   - venv\Scripts\activate      # on Windows
-3. Install dependencies
-   - pip install -r requirements.txt
-4. Open a notebook
-   - jupyter lab
-   - Inspect the notebooks in the notebooks directory and run the first one to get a feel for the layout
+Make sure you have the following installed:
 
-If you do not have Jupyter installed you can run individual scripts with python script_name.py
+```bash
+pip install -r requirements.txt
+```
 
-## Recommended environment
+### Running the Code
 
-- Python 3.8 or newer
-- JupyterLab or Jupyter Notebook for interactive exploration
-- Optional quantum frameworks such as Qiskit, Cirq, or PennyLane can be used with the examples if you prefer hardware-specific backends
+Each script can be run independently:
 
-## Typical workflow
+```bash
+python Deutsch-Jozsa_algo.py
+python quantum_coin.py
+python random_circuits.py
+```
 
-- Pick a notebook in the notebooks folder
-- Run cells in order, read the commentary, and tweak parameters to see how the outputs change
-- If you want to add a new experiment, follow the structure of existing notebooks and include a short summary and expected results
+## About This Project ˚₊۶ৎ˙⋆
 
-## Examples
+This repository serves as my personal playground for quantum computing experiments. Whether you're a fellow quantum enthusiast or just starting your journey into the quantum realm, feel free to explore, fork, and build upon these implementations.
 
-- notebooks/01-intro.ipynb covers qubits, superposition, and measurement
-- notebooks/02-entanglement.ipynb shows Bell states and basic entanglement experiments
-- scripts/simulate_circuit.py runs a defined circuit through the bundled simulator and prints the state vector
+Quantum computing represents a paradigm shift in how we process information, leveraging the strange and beautiful properties of quantum mechanics like superposition and entanglement. These projects aim to make these concepts more tangible and accessible.
 
-Adjust paths or framework choices as needed depending on the backends installed in your environment.
+## Contributing 
 
-## Testing
-
-- Where tests exist, run them with
-  - pytest
-- Keep tests small and deterministic so they remain reliable between runs
-
-## Contributing
-
-Contributions are welcome. Please follow these simple steps so your change can be reviewed and merged smoothly.
-
-1. Fork the repository
-2. Create a feature branch
-   - git checkout -b feature/your-idea
-3. Make your changes and include tests or a notebook that demonstrates the change
-4. Run the existing tests and fix issues
-5. Submit a pull request with a clear description of what you changed and why
-
-A short pull request template is included in .github/PULL_REQUEST_TEMPLATE.md to help you provide the right context.
-
-## Style and quality
-
-- Keep notebooks readable and well documented
-- Use small, focused functions in scripts
-- Add comments for nontrivial math or quantum heuristics
-- Aim for reproducible examples with fixed random seeds where appropriate
-
-## Roadmap
-
-Planned additions include:
-
-- More intermediate and advanced notebooks covering error mitigation and variational algorithms
-- Utility functions to make common tasks simpler to reuse
-- A small tutorial series that ties the notebooks together into a learning path
+Found a bug? Have an idea for a new quantum algorithm to implement? Contributions are welcome! Feel free to open an issue or submit a pull request.
 
 ## License
 
-This project is provided under the MIT License. See the LICENSE file for details.
+This project is open source and available for educational and research purposes.
 
-## Contact
+## Acknowledgments (´｡• ᵕ •｡`)
 
-If you have questions or suggestions, open an issue or reach out via GitHub at https://github.com/zeefromzee
+Built with passion for quantum computing and inspired by the incredible work being done in the quantum research community. Special thanks to the open-source quantum computing frameworks that make these explorations possible.
 
-Thank you for visiting. Happy experimenting with tiny qubits and clever circuits.
+---
+
+*"Nature isn't classical, and if you want to make a simulation of nature, you'd better make it quantum mechanical."* — Richard Feynman
