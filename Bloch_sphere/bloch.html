@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloch Sphere</title>
+  <link rel="stylesheet" href="bloch.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Bloch Sphere Visualization</h1>
+
+    <div class="canvas-wrap">
+      <canvas id="bloch"></canvas>
+    </div>
+
+    <div class="controls">
+      <label>Theta (<span id="tval">90</span> deg)
+        <input id="theta" type="range" min="0" max="180" value="90">
+      </label>
+
+      <label>Phi (<span id="pval">0</span> deg)
+        <input id="phi" type="range" min="0" max="360" value="0">
+      </label>
+
+      <div style="display:flex;gap:8px;">
+        <button id="btn0">|0></button>
+        <button id="btn1">|1></button>
+      </div>
+
+      <button id="random">Random</button>
+    </div>
+  </div>
+  <h3>Apply Quantum Gates:</h3>
+  <div>
+    
+    <button id="X-gate">X gate</button>
+    <br>
+    <button id="Y-gate">Y gate</button>
+    <br>
+    <button id="Z-gate">Z gate</button>
+    <br>
+    <button id="H-gate">H gate</button>
+    <br>
+    <button id="S-gate">S gate</button>
+    <br>
+    <button id="T-gate">T gate</button>
+  </div>
+  <script src="bloch.js"></script>
+</body>
+</html>
